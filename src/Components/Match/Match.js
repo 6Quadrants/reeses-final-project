@@ -1,6 +1,6 @@
 import React from "react";
 import "./Match.css";
-import {Col, Form, Image } from "react-bootstrap";
+import {Col, Button, Form, Image } from "react-bootstrap";
 
 
 
@@ -18,6 +18,8 @@ const Match = props => (
                 </Col>
 
              <Col lg={8} sm={12} className="sliders">
+             <Button className="submit">SUBMIT</Button>
+             <Button className="reset">RESET</Button>
              </Col>
 
         </div>

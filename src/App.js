@@ -4,7 +4,7 @@ import Nav from "./Components/Nav";
 import Navigation from "./Components/Navigation";
 import Profiles from "./Components/Profiles";
 import Match from "./Components/Match";
-
+import Results from "./Components/Results";
 
 
 
@@ -16,6 +16,7 @@ const App = () => (
       <Navigation />
       <Profiles />
       <Match />
+      <Results />
      
   </div>
 
