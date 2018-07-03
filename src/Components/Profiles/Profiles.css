@@ -1,0 +1,149 @@
+/* body {
+    font-size: 62.5%;
+    background-color: #F7F7F7;
+
+} */
+
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2.25px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #675F5F;
+    font-size: 1.4em;
+    line-height: 2em;
+}
+
+.bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    max-width: 30%;
+}
+
+
+span.profile-header {
+    color: #ffffff;
+    background-color: #F96A00;
+    padding: .4em 1.2em;
+    border-radius: 55px;
+}
+
+span.profile-subheader {
+    color: #ffffff;
+    background-color: #FFCB00;
+    padding: .2em .8em;
+    border-radius: 45px;
+}
+
+
+/* .container-fluid {
+    padding: 0px;
+    max-width: 100%;
+}
+
+.container-fluid.profile-cont {
+    padding: 0px;
+    margin: 0px;
+} */
+
+.profile-cont {
+    background-color: #F7F7F7;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-info {
+    padding: 3em;
+}
+
+.product-content {
+    max-width: 100%;
+}
+
+
+.col-lg-8.profile-grid {
+    z-index: 0;
+
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em;
+
+}
+
+.col-lg-4.profile-bio {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgba(216,216,216, .4);
+    max-width: 100%;
+    padding: 0;
+}
+
+.profile-photo {
+    max-width: 80%;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.product-img {
+    max-width: 75%;
+}
+
+h1.product-name {
+    color: #4B1C1B;
+    margin-bottom: .8em;
+}
+
+h1.ratio {
+    font-size: 5em;
+}
+
+.ratio-result {
+    margin-top: 2em;
+}
+
+.profile-grid {
+    height: 500px;
+    background-color: #000000;
+}
+
+@media screen and (max-width: 992px) {
+
+/* .col-lg-8.profile-grid {
+    width: 100%;
+}
+
+.col-lg-4.profile-bio {
+    width: 100%;
+} */
+
+/* .product-grid {
+    padding: 0px;
+}
+
+.products {
+    width: 50%; 
+     padding: 2em; 
+} */
+
+}
