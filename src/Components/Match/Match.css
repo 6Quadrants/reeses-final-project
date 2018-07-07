@@ -7,17 +7,14 @@ p.input-text {
     line-height: 2.4em;
 }
 
-.brown-bg {
+/* .brown-bg {
     background-color: #4B1C1B;
-    /* position: absolute;
-    left: 0px;
-    top: 0px; */
+ 
     z-index: -2;
     max-width: 20%;
     height: 100%;
-    /* margin: -40px; */
 
-}
+} */
 
 .slider-reference{
     display: flex;

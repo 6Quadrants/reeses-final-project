@@ -31,7 +31,19 @@ button.btn:hover  {
 }
 
 
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  /* letter-spacing: 2.25px; */
+}
 
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #675F5F;
+  font-size: 1.4em;
+  line-height: 2em;
+}
 
 
 
