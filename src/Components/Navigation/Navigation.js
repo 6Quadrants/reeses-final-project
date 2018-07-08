@@ -84,7 +84,7 @@ const Navbar = props => (
                       <a className="nav-link" href="#Match">Match</a>
                     </li>
                     <li className="nav-item stats">
-                      <a className="nav-link" href="#Stats">Stats</a>
+                      <a className="nav-link" href="/Registraion">Registration</a>
                     </li>
                   
                   </ul>

@@ -8,6 +8,7 @@ import Navigation from "./Components/Navigation";
 import Profiles from "./Components/Profiles";
 import Match from "./Components/Match";
 import Results from "./Components/Results";
+import Registration from "./Components/Registration";
 import Footer from "./Components/Footer";
 
 // const GoogleFontsPlugin = Require("google-fonts-webpack-plugin");
@@ -17,6 +18,7 @@ import Footer from "./Components/Footer";
 const App = () => (
 
   <div className="reeses-wrapper">
+      <Registration />
       {/* <Nav /> */}
       <Navigation />
       <Profiles />

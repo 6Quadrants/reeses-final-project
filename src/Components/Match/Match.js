@@ -1,7 +1,7 @@
 import React from "react";
 import "./Match.css";
+import Form from "../Form";
 import {Col, Button, Image } from "react-bootstrap";
-import Form from "../../Components/Form";
 
 
 const Match = props => (
@@ -21,9 +21,12 @@ const Match = props => (
                 </Col>
 
              <Col lg={8} sm={12} className="sliders">
+             <h1>Some form?</h1>
              <Form />
-             <Button className="submit">SUBMIT</Button>
-             <Button className="reset">RESET</Button>
+
+             {/* <Button className="submit">SUBMIT</Button>
+             <Button className="reset">RESET</Button> */}
+
              </Col>
 
         </div>

@@ -39,8 +39,8 @@ const Profiles = props => (
                 <p className="product-description">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
                 </p>
-            <div class="ratio-result">
-                <h1 class="ratio">
+            <div className="ratio-result">
+                <h1 className="ratio">
                     <span className="chocolate">{props.chocolate}</span>
                     <span className="colon">:</span>
                     <span className="pb">{props.peanutbutter}</span>
