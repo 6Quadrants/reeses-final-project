@@ -1,11 +1,14 @@
 import React from "react";
 import "./Profiles.css";
 import { Grid, Button, Col} from "react-bootstrap";
+// import  { ProfileClassic }  from "../../Components/ReesesProfiles";
+
 
 import classic from "../../Images/classic.png";
 import bigcup from "../../Images/bigcup.png";
 import mini from "../../Images/mini.png";
 import miniature from "../../Images/miniature.png";
+
 
 
 const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
@@ -34,8 +37,9 @@ const Profiles = props => (
 
         <Col lg={4} className="profile-bio">
             <div className="profile-info">
+            {/* <ProfileClassic /> */}
             
-                <h1 className="product-name">{props.name}</h1>
+                {/* <h1 className="product-name">{props.name}</h1>
                 <p className="product-description">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
                 </p>
@@ -46,7 +50,7 @@ const Profiles = props => (
                     <span className="pb">{props.peanutbutter}</span>
                 </h1>
             </div>
-            <Button><a href="#">BUTTON</a></Button>
+            <Button><a href="#">BUTTON</a></Button> */}
             </div>
 
         </Col>

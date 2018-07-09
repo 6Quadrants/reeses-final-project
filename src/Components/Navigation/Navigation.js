@@ -1,6 +1,6 @@
-// import React from "react";
-// import "./Navigation.css";
-// import { Navbar, NavDropdown, NavItem, MenuItem, Nav } from "react-bootstrap";
+import React from "react";
+import "./Navigation.css";
+import { Navbar, NavDropdown, NavItem, MenuItem, Nav } from "react-bootstrap";
 
 
 // const Navigation = props => (
@@ -56,10 +56,10 @@
 
 
 
-import React from "react";
-import "./Navbar.css";
+// import React from "react";
+// import "./Navbar.css";
 
-const Navbar = props => (
+const Navigation = props => (
 
 
     <nav className="navbar navbar-expand-lg navbar-light">
@@ -94,5 +94,5 @@ const Navbar = props => (
 
 );
 
-export default Navbar;
+export default Navigation;
 

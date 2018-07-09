@@ -3,9 +3,7 @@ import { Navbar, NavDropdown, NavItem, MenuItem, Nav } from "react-bootstrap";
 
 
 const Navigation = props => (
-
     
-
 <Navbar inverse collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>

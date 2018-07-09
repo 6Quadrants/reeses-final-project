@@ -1,7 +1,10 @@
 import React from "react";
 import "./Match.css";
+
 import Form from "../Form";
 import {Col, Button, Image } from "react-bootstrap";
+
+
 
 
 const Match = props => (

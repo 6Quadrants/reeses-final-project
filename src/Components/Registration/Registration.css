@@ -2,3 +2,23 @@
     background-color: #F96A00;
     height: 100vh;
 }
+
+.row.text,
+.row.form {
+    margin: auto;
+}
+
+h1.welcome {
+    font-size: 5em;
+    color: #ffffff;
+    text-align: center;
+    margin: 2em;
+    
+}
+
+h2.subtext {
+    font-size: 4em;
+    color: #ffffff;
+    text-align: center;
+
+}

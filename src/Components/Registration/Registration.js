@@ -1,65 +1,38 @@
-import React from "react";
+import React, {Component} from "react";
 import "./Registration.css";
-import {Col, Button, Image } from "react-bootstrap";
+// import { Link } from "react-router-dom";
 
+import {Col, Button, Image } from "react-bootstrap";
+import { List, ListItem } from "../List";
 
 const Registration = props => (
-    <div className="container-fluid wrapper">
-        <div className="container innerwrapper">
-        <div className="row">
-            <div className="textintro">
-                <h1 className="hello">Hello and Welcome</h1>
-            </div>
-            <div className="register">
 
-                <form className="email">
-                    <div className="form-group">
-                    <label htmlFor="email">Your Email</label>
-                    <input
-                        value={props.email}
-                        onChange={props.handleInputChange}
-                        name="email"
-                        type="text"
-                        className="form-control"
-                        placeholder="type yer email, bitch"
-                        id="email"
-                    />
-                     <label htmlFor="name">Your Name</label>
-                        <input
-                        value={props.name}
-                        onChange={props.handleInputChange}
-                        name="name"
-                        type="text"
-                        className="form-control"
-                        placeholder="type yer name, bitch"
-                        id="name"
-                    />
-                      <label htmlFor="password">Your Password</label>
-                        <input
-                        value={props.password}
-                        onChange={props.handleInputChange}
-                        name="password"
-                        type="text"
-                        className="form-control"
-                        placeholder="type yer password, bitch"
-                        id="password"
-                    />
-                   
-                    <button
-                        type="submit"
-                        onClick={props.handleFormSubmit}
-                        className="btn btn-success"
-                    >
-                        
-                    </button>
-                    </div>
-                </form>
-            </div>
+    state = {
+        name: "",
+        email: "",
+        password: ""
+      };
+    
 
+    <div className="container-fluid wrapper" id="Registration">
+    <div className="container-inner">
+        <div className="row text">
+   
+        <Col sm={12} className="login">
+            <h1 className="welcome">Welcome to the Reeses's Match</h1>
+            <h2 className="subtext">Subtext here</h2>
+
+        </Col>
         </div>
+        <Col sm={12} className="login">
+
+        <div className="row form">
+            <form>
+            </form>
         </div>
+        </Col>
     </div>
-
+    </div>
 
 )
 

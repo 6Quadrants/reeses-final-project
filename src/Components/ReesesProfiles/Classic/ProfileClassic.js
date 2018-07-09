@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-const Classic = props => (
+const ProfileClassic = props => (
 
 
 <div className="profile-info">
@@ -23,4 +23,4 @@ const Classic = props => (
 
 )
 
-export default Classic;
+export default ProfileClassic;
