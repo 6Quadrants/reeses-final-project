@@ -1,0 +1,67 @@
+.container-fluid.wrapper {
+    background-color: #F96A00;
+    height: 100vh;
+}
+
+.row.text,
+.row.form {
+    margin: auto;
+}
+
+h1.welcome {
+    font-size: 5em;
+    color: #ffffff;
+    text-align: center;
+    margin: 1em;
+
+}
+
+h2.subtext {
+    font-size: 4em;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+
+
+.bg-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 85vh;
+    z-index: 0;
+}
+
+.bg-overlap {
+    position: absolute;
+    top: -2em;
+    right: 0;
+    height: 50vh;
+    z-index: 0;
+
+}
+
+h1.colon {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFCB00;
+    font-weight: bolder;
+    /* font-size: 3em; */
+    letter-spacing: 2.25px;
+    padding-left: 50px;
+    z-index: 5;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    padding: 0;
+    z-index: 25;
+}

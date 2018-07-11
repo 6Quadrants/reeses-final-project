@@ -1,0 +1,45 @@
+
+.blah {
+    margin-bottom: 200px;
+    margin-top: 200px;
+
+}
+
+h3.winner-hilite {
+    color: #F96A00;
+}
+
+.card-image-bg {
+    background-color: #ffffff;
+    box-shadow: 0px 7px 10px #cccccc;
+    padding: 2em;
+    /* max-height: 85%; */
+    border-radius: 25px;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    max-width: 65%;
+    margin: auto;
+    /* box-shadow: 0px 7px 10px #cccccc; */
+
+
+}
+
+.card-text {
+    align-self: center;
+    background-color: #EDECEC;
+    align-self: center;
+    max-width: 75%;
+    padding: 6.8em;
+    margin-left: -3em;
+    z-index: -1;
+    /* box-shadow: 0px 7px 5px #cccccc; */
+
+}
+
+.winnericon {
+    width: 100px;
+    margin-bottom: 1.6em;
+}

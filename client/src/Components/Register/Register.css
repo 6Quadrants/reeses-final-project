@@ -1,0 +1,23 @@
+h2.subtext {
+    font-size: 4em;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+button.btn.register {
+    border: solid 3px #FFCB00;
+    color: #FFCB00;
+    background-color: #F96A00;
+}
+
+button.btn.register:hover {
+    border: solid 3px #FFCB00;
+    background-color: #FFCB00;
+    color: #ffffff;
+}
