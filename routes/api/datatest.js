@@ -1,28 +1,49 @@
-var express = require('express');
-const router = require("express").Router();
-var mongoose = require('mongoose');
+import express from 'express';
+import Datatest from "../../models/datatestmodel";
+const datatestRouter = express.Router();
 
-var Reeses = require('../../models/reeses-cups');
 
-const reesesController = require("../../controllers/reesesController");
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.send('Express REST API');
-  });
-  
-  
-  // Matches with "/api/reeses"
-  router.route("/")
-    .get(reesesController.findAll)
-    .post(reesesController.create);
-  
-  // Matches with "/api/books/:id"
-  router
-    .route("/:id")
-    .get(reesesController.findById)
-    .put(reesesController.update)
-    .delete(reesesController.remove);
-  
-  module.exports = router;
-  
+datatestRouter.route('/')
+    .get((req,res) => {
+        Datatest.find({}, (err, datatest) => {
+            res.json(books)
+        })
+    .post((req, res) => {
+        let datatest = new Datatest(req.body);
+        
+        
+        // ({ product: 'easter', chocolate: 2 });
+
+        datatest.save();
+        res.status(201).send(datatest)
+    })
+
+datatestRouter.route('/:datatestId')
+        .get((req, res) => {
+            Datatest.findById(req.params.datatestId, (err, book)=> {
+                res.json(datatest)
+            })
+        })
+
+datatestRouter.route('/:datatestId'
+        .get((req, res) => {
+            Datatest.findById(req.params.datatestId, (err, datatest) => {
+                res.json(datatest)
+            })
+        })
+        .put((req,res) => {
+            Datatest.findById(req.params.bookId, (err, datatest) => {
+                datatest.product = req.body.product;
+                datatest.chocolate = req.body.chocolate;
+                datatet.save()
+                res.json(datatest)
+            })
+
+        })
+      
+)
+       
+    })
+   
+export default datatestRouter;

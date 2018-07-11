@@ -5,6 +5,9 @@ export default {
   getReeses: function() {
     return axios.get("/api/reeses");
   },
+  getDatatest: function() {
+    return axios.get("/api/datatest");
+  },
   // Gets the book with the given id
   getReeses: function(id) {
     return axios.get("/api/reeses/" + id);

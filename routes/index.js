@@ -15,6 +15,7 @@
 
 const path = require("path");
 const router = require("express").Router();
+// const datatestRoutes = require("./api/datatest");
 const apiRoutes = require("./api");
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
@@ -25,6 +26,7 @@ const validateLoginInput = require('../validation/login');
 
 // API Routes
 router.use("/api", apiRoutes);
+
 
 router.post("/registration", function(req, res){
   User.create(req.body)
