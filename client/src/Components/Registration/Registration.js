@@ -19,11 +19,11 @@ const Registration = props => (
 
     <div className="header"><h1 className="colon">CHOC:PB</h1></div>
     <div className="container-inner">
-        <div className="row text">
+        <div className="intro">
    
         <Col sm={12} className="login">
             <h1 className="welcome">Welcome to the Reeses's Match</h1>
-            <h2 className="subtext">Sign in or register</h2>
+            <h2 className="subtext">Sign in or register to begin</h2>
 
         </Col>
         </div>
@@ -31,10 +31,14 @@ const Registration = props => (
 
     <div className="row form">
         <Col md={6}>
+        <div className="card-login">
         <Login />
+        </div>
         </Col>
         <Col md={6}>
+        <div className="card-register">
         <Register />
+        </div>
         </Col>
     
     </div>

@@ -1,7 +1,8 @@
 /* Customize the label (the container)  */
 
 .form-box {
-    border-bottom: 2px solid #F96A00;
+    /* border-bottom: 2px solid #F96A00; */
+    background-color: #EDECEC;
 }
 
 .form-group {
@@ -72,6 +73,10 @@ h3.button-label {
   position: absolute;
   display: none;
 }
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
 
 /* Show the indicator (dot/circle) when checked */
 .buttons input:checked ~ .checkmark:after {

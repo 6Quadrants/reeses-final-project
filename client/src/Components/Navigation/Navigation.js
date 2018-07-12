@@ -22,13 +22,13 @@ const Navigation = props => (
     <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav">
                     <li className="nav-item profiles">
-                      <a className="nav-link" href="#Profiles">Profiles</a>
+                      <a className="nav-link" href="/profiles">Profiles</a>
                     </li>
                     <li className="nav-item match">
-                      <a className="nav-link" href="#Match">Match</a>
+                      <a className="nav-link" href="/match">Match</a>
                     </li>
                     <li className="nav-item stats">
-                      <a className="nav-link" href="/Registraion">Registration</a>
+                      <a className="nav-link" href="/stats">Stats</a>
                     </li>
                   
                   </ul>

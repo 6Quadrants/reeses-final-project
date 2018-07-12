@@ -3,21 +3,26 @@
     height: 100vh;
 }
 
-.row.text,
+/* .row.text,
 .row.form {
     margin: auto;
+} */
+
+.intro{
+    margin-bottom: 6em;
 }
 
 h1.welcome {
     font-size: 5em;
     color: #ffffff;
     text-align: center;
-    margin: 1em;
+    margin-top: 1em;
+    text-transform: uppercase;
 
 }
 
 h2.subtext {
-    font-size: 4em;
+    font-size: 2.6em;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
@@ -65,3 +70,4 @@ h1.colon {
     padding: 0;
     z-index: 25;
 }
+

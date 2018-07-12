@@ -1,5 +1,5 @@
-import express from 'express';
-import Datatest from "../../models/datatestmodel";
+const express = require('express');
+const Datatest = require("../../models/datatestmodel");
 const datatestRouter = express.Router();
 
 
@@ -7,7 +7,7 @@ const datatestRouter = express.Router();
 datatestRouter.route('/')
     .get((req,res) => {
         Datatest.find({}, (err, datatest) => {
-            res.json(books)
+            res.json(datatest)
         })
     .post((req, res) => {
         let datatest = new Datatest(req.body);
@@ -46,4 +46,4 @@ datatestRouter.route('/:datatestId'
        
     })
    
-export default datatestRouter;
+module.exports = datatestRouter;

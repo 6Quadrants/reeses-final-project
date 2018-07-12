@@ -20,6 +20,7 @@ const reesesSeed = [
     chewiness: 5,
     softness: 5,
     crunchiness: 1,
+   
     date: new Date(Date.now())
   },
   {
@@ -30,6 +31,7 @@ const reesesSeed = [
     chewiness: 4,
     softness: 4,
     crunchiness: 2,
+   
     date: new Date(Date.now())
   },
   {
@@ -40,6 +42,8 @@ const reesesSeed = [
     chewiness: 5,
     softness: 2,
     crunchiness: 2,
+  
+   
     date: new Date(Date.now())
   },
   {
@@ -50,6 +54,7 @@ const reesesSeed = [
     chewiness: 5,
     softness: 1,
     crunchiness: 3,
+
     date: new Date(Date.now())
   },
   

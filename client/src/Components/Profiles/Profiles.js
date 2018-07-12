@@ -22,36 +22,38 @@ const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 class Profiles extends Component {
 
-    // state = {
-    //     reeses: [],
-    //     peanutbutter: "",
-    //     chocolate: ""
-    //   };
-    
-    //   componentDidMount() {
-    //     this.loadReeses();
-    //   }
-    
-    //   loadReeses = () => {
-    //     API.getReeses()
-    //       .then(res => this.setState({ reeses: res.data }))
-    //       .catch(err => console.log(err));
-    //   };
-    
-      state = {
-        datatest: [],
+    state = {
+        reeses: [],
         product: "",
+        peanutbutter: "",
+        chocolate: ""
+        
       };
     
       componentDidMount() {
-        this.loadDatatest();
+        this.loadReeses();
       }
     
-      loadDatatest = () => {
-        API.getDatatest()
-          .then(res => this.setState({ datatest: res.data }))
+      loadReeses = () => {
+        API.getReeses()
+          .then(res => this.setState({ reeses: res.data }))
           .catch(err => console.log(err));
       };
+    
+    //   state = {
+    //     datatest: [],
+    //     product: "",
+    //   };
+    
+    //   componentDidMount() {
+    //     this.loadDatatest();
+    //   }
+    
+    //   loadDatatest = () => {
+    //     API.getDatatest()
+    //       .then(res => this.setState({ datatest: res.data }))
+    //       .catch(err => console.log(err));
+    //   };
     
     
     // state = {
@@ -95,13 +97,35 @@ return (
             <div className="profile-info">
 
 
-            {this.state.datatest.length ? (
+            {/* <ProfileClassic /> */}
+            
+            {/* {this.state.reeses ? ( 
+                {this.state.reeses.map(reeses => (
+                    key={reeses._id} 
+                ))}
+                <h1 className="product-name">
+                {this.state.reeses.product}</h1>
+                <p className="product-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </p>
+            <div className="ratio-result">
+                <h1 className="ratio">
+                    <span className="chocolate">{this.state.reeses.chocolate}</span>
+                    <span className="colon">:</span>
+                    <span className="pb">{this.state.reeses.peanutbutter}</span>
+                </h1>
+            ) */}
+                
+            {/* </div> */}
+
+
+             {this.state.reeses.length ? ( 
               <List>
-                {this.datatest.reeses.map(reeses => (
-                  <ListItem key={datatest._id}>
-                    <Link to={"/datatest/" + datatest._id}>
+                {this.state.reeses.map(reeses => (
+                  <ListItem key={reeses._id}>
+                    <Link to={"/reeses/" + reeses._id}>
                       <strong>
-                        {datatest.product} by 
+                        {reeses.chocolate} by {reeses.peanutbutter} and {reeses.product}
                       </strong>
                     </Link>
                   </ListItem>
@@ -111,29 +135,13 @@ return (
               <h3>No Results to Display</h3>
             )}
 
-            {/* {this.state.reeses.length ? (
-              <List>
-                {this.state.reeses.map(reeses => (
-                  <ListItem key={reeses._id}>
-                    <Link to={"/reeses/" + reeses._id}>
-                      <strong>
-                        {reeses.chocolate} by {reeses.peanutbutter}
-                      </strong>
-                    </Link>
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )} */}
-
 
             
-        </div>
+    </div>
 
-            {/* <ProfileClassic /> */}
+             {/* <ProfileClassic />  */}
             
-                {/* <h1 className="product-name">{props.name}</h1>
+                 {/* <h1 className="product-name">{props.name}</h1>
                 <p className="product-description">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
                 </p>
@@ -144,8 +152,8 @@ return (
                     <span className="pb">{props.peanutbutter}</span>
                 </h1>
             </div>
-            <Button><a href="#">BUTTON</a></Button> */}
-           
+            <Button><a href="#">BUTTON</a></Button>  */}
+           {/* </div> */}
         </Col>
     </div>
 

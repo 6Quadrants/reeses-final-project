@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 
+const passport = require("./config/passport");
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -12,15 +14,24 @@ const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// app.use(express.static("public"));
+// app.use(sessionStorage({ secret: "keyboard cat", resave: true, saveUninitialized: true}));
+// app.use(passport.initialize());
+// app.use(passport.session());
+
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// Add routes, both API and view
-// import datatestRouter from "./routes/api/datatest";
-// app.use('/api/datatest', datatestRouter);
 
 app.use(routes);
+
+// require("./routes/html-routes.js")(app);
+// require("./routes/api-routes.js")(app);
+
+
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reesesinitial");

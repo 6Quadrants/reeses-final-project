@@ -5,11 +5,11 @@ export default {
   getReeses: function() {
     return axios.get("/api/reeses");
   },
-  getDatatest: function() {
-    return axios.get("/api/datatest");
+  gettheReeses: function() {
+    return axios.get("/api/reeses");
   },
   // Gets the book with the given id
-  getReeses: function(id) {
+  getAReeses: function(id) {
     return axios.get("/api/reeses/" + id);
   },
   // Deletes the book with the given id

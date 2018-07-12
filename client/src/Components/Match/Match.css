@@ -16,12 +16,20 @@ p.input-text {
 
 } */
 
+span.form-title {
+    color: #ffffff;
+    background-color: #FFCB00;
+    padding: 1em 2em;
+
+}
+
 .slider-reference{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     padding: 6em 0em 0em 6em;
     background-color: #4B1C1B;
-    /* max-width: 25%; */
+    max-width: 100%;
+    margin: auto;
 }
 
 
@@ -59,4 +67,16 @@ h2.button-text{
     font-size: 2.4em;
     color: #ffffff;
     padding: .6em .8em .3em .8em;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+}
+
+h1.match-headings {
+    color: #FFCB00;
+    text-transform: uppercase;
+    text-align:center;
+    padding: 2em;
 }
