@@ -5,11 +5,10 @@ import { Link } from "react-router-dom";
 import { Col} from "react-bootstrap";
 import { List, ListItem } from "../../Components/List";
 
+import Ratioresult from "../Ratioresult";
 
-// import  { ProfileClassic }  from "../../Components/ReesesProfiles";
+import profiledata from "./profiledata.json";
 
-
-import BigCup from "../ReesesProfiles/BigCup/BigCup";
 
 import classic from "../../Images/classic.png";
 import bigcup from "../../Images/bigcup.png";
@@ -23,125 +22,130 @@ const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 class Profiles extends Component {
 
     state = {
-        reeses: [],
-        product: "",
-        peanutbutter: "",
-        chocolate: ""
-        
-      };
-    
-      componentDidMount() {
-        this.loadReeses();
-      }
-    
-      loadReeses = () => {
-        API.getReeses()
-          .then(res => this.setState({ reeses: res.data }))
-          .catch(err => console.log(err));
-      };
-    
-    //   state = {
-    //     datatest: [],
+        profiledata
+    };
+
+    // state = {
+    //     reeses: [],
     //     product: "",
+    //     peanutbutter: "",
+    //     chocolate: ""
+        
     //   };
     
     //   componentDidMount() {
-    //     this.loadDatatest();
+    //     this.loadReeses();
     //   }
     
-    //   loadDatatest = () => {
-    //     API.getDatatest()
-    //       .then(res => this.setState({ datatest: res.data }))
-    //       .catch(err => console.log(err));
-    //   };
-    
-    
-    // state = {
-    //     reeses: {}
-    //   };
-
-    //   componentDidMount() {
-    //     API.getReeses(this.props.match.params.id)
-
+    //   loadReeses = () => {
+    //     API.getReeses()
     //       .then(res => this.setState({ reeses: res.data }))
     //       .catch(err => console.log(err));
-    //   }
+    //   };
     
+  
     
-
-
-
 render() {
 return (
 
 <div className="container-fluid profile-cont" id="Profiles">
-    <div className="row profile-cont">
    
-        <Col lg={8} sm={12} className="profile-grid">
+    <div className="row profile-cont">
+        <Col md={12} className="profile-grid">
             <div className="profile-text">
                 <div className="profile-header"><h2 className="text-padding"><span className="orange-header">ALL THE PROFILES</span></h2></div>
                 <div className="profile-header"><h4 className="text-padding"><span className="yellow-header">HIGHLIGHTED INFO AREA</span></h4></div>
             </div>
-            <div className="product-grid">
-                <div className="products">
-                <img className="product-img" src={miniature} onClick={(e) => 
-                    console.log("lol wut")} key = "1"/></div>
-                <div className="products"><img className="product-img" src={mini} id="1" /></div>
-                <div className="products"><img className="product-img" src={classic} id="3"/></div>
-                <div className="products"><img className="product-img" src={bigcup} id="4" /></div>
-            </div>
         </Col>
-      
-
-        <Col lg={4} className="profile-bio">
-            <div className="profile-info">
-
-
-            {/* <ProfileClassic /> */}
-            
-            {/* {this.state.reeses ? ( 
-                {this.state.reeses.map(reeses => (
-                    key={reeses._id} 
-                ))}
-                <h1 className="product-name">
-                {this.state.reeses.product}</h1>
-                <p className="product-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                </p>
-            <div className="ratio-result">
-                <h1 className="ratio">
-                    <span className="chocolate">{this.state.reeses.chocolate}</span>
-                    <span className="colon">:</span>
-                    <span className="pb">{this.state.reeses.peanutbutter}</span>
-                </h1>
-            ) */}
-                
-            {/* </div> */}
-
-
-             {this.state.reeses.length ? ( 
-              <List>
-                {this.state.reeses.map(reeses => (
-                  <ListItem key={reeses._id}>
-                    <Link to={"/reeses/" + reeses._id}>
-                      <strong>
-                        {reeses.chocolate} by {reeses.peanutbutter} and {reeses.product}
-                      </strong>
-                    </Link>
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-
-
-            
     </div>
+         
 
-             {/* <ProfileClassic />  */}
+    <div className="row profile-images">
+
+        <Col lg={3} md={6} sm={12}className="profile-images">
+
+            <div className="bio-card">
+            <div className="images mini">
+                <img className="product-img" src={miniature} id="1" />   
+            </div>
+            <Ratioresult 
+                chocolate={profiledata[0].chocolate}
+                peanutbutter={profiledata[0].peanutbutter}
+            />
             
-                 {/* <h1 className="product-name">{props.name}</h1>
+        </div>  
+        </Col>
+        
+        <Col lg={3} md={6} sm={12}className="profile-images">
+
+        <div className="bio-card">
+            <div className="images mini">
+                <img className="product-img" src={miniature} id="1" />   
+            </div>
+            <Ratioresult 
+                chocolate={profiledata[1].chocolate}
+                peanutbutter={profiledata[1].peanutbutter}
+            />
+        </div>  
+        </Col>
+
+        <Col lg={3} md={6} sm={12}className="profile-images">
+
+        <div className="bio-card">
+            <div className="images mini">
+                <img className="product-img" src={classic} id="1" />   
+            </div>
+            <Ratioresult 
+                chocolate={profiledata[2].chocolate}
+                peanutbutter={profiledata[2].peanutbutter}
+            />
+        </div>  
+        </Col>
+
+        <Col lg={3} md={6} sm={12}className="profile-images">
+        <div className="bio-card">
+            <div className="images mini">
+                <img className="product-img" src={bigcup} id="1" />   
+            </div>
+            <Ratioresult 
+                chocolate={profiledata[3].chocolate}
+                peanutbutter={profiledata[3].peanutbutter}
+            />
+        </div>  
+        </Col>
+    </div>
+</div>
+)}
+}
+
+export default Profiles;
+
+                
+
+
+            //  {this.state.reeses.length ? ( 
+            //   <List>
+            //     {this.state.reeses.map(reeses => (
+            //       <ListItem key={reeses._id}>
+            //         <Link to={"/reeses/" + reeses._id}>
+            //           <strong>
+            //             {reeses.chocolate} by {reeses.peanutbutter} and {reeses.product}
+            //           </strong>
+            //         </Link>
+            //       </ListItem>
+            //     ))}
+            //   </List>
+            // ) : (
+            //   <h3>No Results to Display</h3>
+            // )}
+
+
+            
+   
+
+             /* <ProfileClassic />  */
+            
+                 /* <h1 className="product-name">{props.name}</h1>
                 <p className="product-description">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
                 </p>
@@ -152,16 +156,13 @@ return (
                     <span className="pb">{props.peanutbutter}</span>
                 </h1>
             </div>
-            <Button><a href="#">BUTTON</a></Button>  */}
-           {/* </div> */}
-        </Col>
-    </div>
-
-</div>
-
-);
-}
-}
+            <Button><a href="#">BUTTON</a></Button>  */
+           /* </div> */
 
 
-export default Profiles;
+
+
+
+
+
+

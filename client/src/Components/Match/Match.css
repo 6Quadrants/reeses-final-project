@@ -1,3 +1,11 @@
+row .form-container {
+    width: 100%;
+}
+
+.sliders {
+    background-color: #FFCB00;
+}
+
 
 p.input-text {
     font-weight: 400;
@@ -7,21 +15,40 @@ p.input-text {
     line-height: 2.4em;
 }
 
-/* .brown-bg {
-    background-color: #4B1C1B;
- 
-    z-index: -2;
-    max-width: 20%;
-    height: 100%;
+.form-row-y {
+    background-color: #FFF5CF;
+}
 
-} */
 
-span.form-title {
-    color: #ffffff;
+.sliders-title-y {
     background-color: #FFCB00;
-    padding: 1em 2em;
+}
+
+.sliders-title-b {
+    background-color: #4B1C1B;
+}
+
+.sliders-form-y {
+    background-color: #FFF5CF;
+    width: 100%;
+}
+
+.sliders-form-b {
+    background-color: #FCF8F5;
+    width: 100%;
+}
+
+h1.form-title {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 4em;
+    letter-spacing: 4px;
+    text-align: center;
+    padding-top: 1.2em;
 
 }
+
 
 .slider-reference{
     /* display: flex;
@@ -32,18 +59,9 @@ span.form-title {
     margin: auto;
 }
 
-
-span.profile-yellow {
-    color: #ffffff;
-    background-color: #FFCB00;
-    padding: .2em .8em;
-    border-radius: 45px;
-}
-
 .slider-ref-text {
     margin-bottom: 3.6em;
 }
-
 
 
 button {
