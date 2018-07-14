@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Form.css";
+import API from '../../utils/API';
 
 class Form extends Component {
   // Setting the component's initial state
@@ -49,6 +50,13 @@ class Form extends Component {
     //   four: +4,
     //   five: +5
     // });
+    API.matchName( { lastName: this.state.lastName } ).then( res => {
+      console.log(res);
+      if ( res.data === true  ) {
+        alert('last name submitted');
+      }
+    });
+
     alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
     this.setState({
       one: +1,

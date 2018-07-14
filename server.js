@@ -1,13 +1,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const routes = require("./routes");
+// const routes = require("./routes");
+// const form_routes = require("./routes/api/form");
 
-const passport = require("./config/passport");
+
+// const passport = require("./config/passport");
 
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 
 // Define middleware here
@@ -26,7 +28,25 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.use(routes);
+
+app.get( '/api/saveName', (req, res) => {
+  console.log('made it here');
+  res.send('we are here');
+});
+
+app.post( '/api/saveName', (req, res) => {
+  console.log(req.body);
+  console.log('made it here');
+  let nameData = req.body; 
+  console.log('Submitted name: ', req.body.lastName);
+  res.json(true)
+});
+
+// app.use(routes);
+// app.use(form_routes);
+
+
+
 
 // require("./routes/html-routes.js")(app);
 // require("./routes/api-routes.js")(app);

@@ -13,7 +13,26 @@ router
   .put(formController.update)
   .delete(formController.remove);
 
+
+router.route('/api/saveName')
+  .post( (req, res) => {
+    console.log('made it here');
+    req.body = nameData; 
+    console.log('Submitted name: ', nameData);
+    res.json(true)
+  });
+
+
 module.exports = router;
+
+
+// router.get("/recipes", (req, res) => {
+//   axios
+//     .get("http://www.recipepuppy.com/api/", { params: req.query })
+//     .then(({ data: { results } }) => res.json(results))
+//     .catch(err => res.status(422).json(err));
+// });
+
 
 
 
