@@ -1,55 +1,56 @@
 import React, { Component } from "react";
+import "../../ReesesProfiles/Reesesprofiles.css";
 import API from "../../../utils/API";
-import { Col} from "react-bootstrap"
+import { Col, Button} from "react-bootstrap"
+
+import Ratioresult from "../Ratioresult";
+import profiledata from "./profiledata.json";
+
+import classic from "../../Images/classic.png";
+
+
 
 class Classic extends Component {
 
-  state = {
-    reeses: []
-  };
+//   state = {
+//     reeses: []
+//   };
 
-  componentDidMount() {
-    this.loadReeses();
-  }
+//   componentDidMount() {
+//     this.loadReeses();
+//   }
 
-  loadReeses = () => {
-    API.getReeses()
-      .then(res => this.setState({ reeses: res.data }))
-      .catch(err => console.log(err));
-    //   .catch(err => console.log(loadReeses));
+//   loadReeses = () => {
+//     API.getReeses()
+//       .then(res => this.setState({ reeses: res.data }))
+//       .catch(err => console.log(err));
+//     //   .catch(err => console.log(loadReeses));
       
-  };
+//   };
 
   render() {
     return (
-    //   <Container fluid>
-    //     <Row>
-    <div>
-        <div>
-         
-          <Col md={6}>
-              <h1>Render?</h1>
-
-            {this.state.reeses.length ? (
-            <ul>
-                {this.state.reeses.map(reeses => (
-                  <li key={reeses._id}>
-                    <a href={"/reeses/" + reeses._id}>
-                      <strong>
-                        {reeses.product} by {reeses.chocolate}
-                      </strong>
-                    </a>
-                    {/* <DeleteBtn /> */}
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col>
-
-          </div>
-          </div>
+        <div className="container-fluid">
+            <div className="profile-row">
+            <Col md={6}>
+                <div><img /></div>
+            </Col>
+            <Col md={6} className="profile-text-col">
+                <div className="profile-text">
+                    <div className="product-title">
+                    <h1>Classic</h1>
+                    <div className="product-info">
+                    <p>blahblah</p>
+                    </div>
+                    <div className="ratioresult">
+                    <Button>CLICK TO REVEAL</Button>
+                    </div>
+                    </div>
+                </div>
+            </Col>
+            </div>
+        </div>
+    
     
     );
   }

@@ -2,6 +2,8 @@ import React from "react";
 import "./Match.css";
 
 import Form from "../Form";
+// import FormChewy from "../FormChewy";
+
 import CardResult from "../CardResult";
 import {Col, Button, Image } from "react-bootstrap";
 
@@ -40,7 +42,7 @@ const Match = props => (
                 </Col>
                 </div>
 
-                <div className="form-row">
+                {/* <div className="form-row">
                 <Col md={4} className="sliders-title-b">
                 <div>
                     <h1 className="form-title">SWEET</h1>
@@ -51,9 +53,9 @@ const Match = props => (
                     <Form />
                 </div>
                 </Col>
-                </div>
+                </div> */}
 
-                <div className="form-row">
+                {/* <div className="form-row">
                 <Col md={4} className="sliders-title-y">
                 <div>
                     <h1 className="form-title">MELTABLE</h1>
@@ -64,9 +66,9 @@ const Match = props => (
                     <Form />
                 </div>
                 </Col>
-                </div>
+                </div> */}
 
-                <div className="form-row">
+                {/* <div className="form-row">
                 <Col md={4} className="sliders-title-b">
                 <div>
                     <h1 className="form-title">CHEWY</h1>
@@ -77,9 +79,9 @@ const Match = props => (
                     <Form />
                 </div>
                 </Col>
-                </div>
+                </div> */}
 
-                <div className="form-row">
+                {/* <div className="form-row">
                 <Col md={4} className="sliders-title-y">
                 <div>
                     <h1 className="form-title">SMOOTH</h1>
@@ -90,7 +92,7 @@ const Match = props => (
                     <Form />
                 </div>
                 </Col>
-                </div>
+                </div> */}
            
              </div>
 

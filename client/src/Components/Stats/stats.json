@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Mini",
+        "diameter": 0,
+        "weight": 0,
+        "chocolate": 0,
+        "peanutbutter": 0
+    },
+    {
+        "id": 2,
+        "name": "Miniature",
+        "diameter": 0,
+        "weight": 0,
+        "chocolate": 0,
+        "peanutbutter": 0
+    },
+    {
+        "id": 3,
+        "name": "Classic",
+        "diameter": 0,
+        "weight": 0,
+        "chocolate": 0,
+        "peanutbutter": 0
+    },
+    {
+        "id": 4,
+        "name": "Big Cup",
+        "diameter": 0,
+        "weight": 0,
+        "chocolate": 0,
+        "peanutbutter": 0
+    }
+
+]

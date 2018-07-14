@@ -8,12 +8,16 @@ import { List, ListItem } from "../../Components/List";
 import Ratioresult from "../Ratioresult";
 
 import profiledata from "./profiledata.json";
+// import Profileclassic from "../../";
+
 
 
 import classic from "../../Images/classic.png";
 import bigcup from "../../Images/bigcup.png";
 import mini from "../../Images/mini.png";
 import miniature from "../../Images/miniature.png";
+
+
 
 
 
@@ -53,66 +57,123 @@ return (
     <div className="row profile-cont">
         <Col md={12} className="profile-grid">
             <div className="profile-text">
-                <div className="profile-header"><h2 className="text-padding"><span className="orange-header">ALL THE PROFILES</span></h2></div>
-                <div className="profile-header"><h4 className="text-padding"><span className="yellow-header">HIGHLIGHTED INFO AREA</span></h4></div>
+                <div className="profile-header"><h2 className="text-padding"><span className="yellow-header">ALL THE PROFILES</span></h2></div>
+                <div className="profile-sub-header"><h4 className="text-padding"><span className="">HIGHLIGHTED INFO AREA</span></h4></div>
             </div>
         </Col>
-    </div>
+</div>
          
 
-    <div className="row profile-images">
+    <div className="row profile-images-row">
 
-        <Col lg={3} md={6} sm={12}className="profile-images">
-
-            <div className="bio-card">
+    <Col md={6} sm={12}className="profile-images cardmini">
+        
+        <div className="bio-card ">
+        <div className="inner-row">
+        <Col md={6} className="innercolumn">
             <div className="images mini">
-                <img className="product-img" src={miniature} id="1" />   
+                <img className="product-img" src={mini} id="1" />   
+            </div>
+        </Col>
+        
+        <Col md={6} className="innercolumn right">
+            <div className="bioinfo">
+                <h1 className="productname">Mini</h1>
+                <p className="product-description">
+                Don't blink because you may miss the mini. A poppable cup with a thick outer shell.
+                </p>
             </div>
             <Ratioresult 
                 chocolate={profiledata[0].chocolate}
                 peanutbutter={profiledata[0].peanutbutter}
             />
-            
+        </Col>
+        </div>
         </div>  
         </Col>
-        
-        <Col lg={3} md={6} sm={12}className="profile-images">
 
-        <div className="bio-card">
+        <Col md={6} sm={12}className="profile-images cardminiature">
+        
+        <div className="bio-card ">
+        <div className="inner-row">
+        <Col md={6} className="innercolumn">
             <div className="images mini">
-                <img className="product-img" src={miniature} id="1" />   
+                <img className="product-img" src={classic} id="1" />   
+            </div>
+        </Col>
+        
+        <Col md={6} className="innercolumn right">
+            <div className="bioinfo">
+                <h1 className="productname">Miniature</h1>
+                <p className="product-description">
+                Don't confuse The Miniature with the mini. The individually wrapped Miniature is its with a unique personality and loves to travel.
+                </p>
             </div>
             <Ratioresult 
                 chocolate={profiledata[1].chocolate}
                 peanutbutter={profiledata[1].peanutbutter}
             />
+        </Col>
+        </div>
         </div>  
         </Col>
+</div>
 
-        <Col lg={3} md={6} sm={12}className="profile-images">
-
+    <div className="row profile-images-row">
+        <Col md={6} sm={12}className="profile-images cardclassic">
+        
         <div className="bio-card">
+        <div className="inner-row">
+        <Col md={6} className="innercolumn">
             <div className="images mini">
                 <img className="product-img" src={classic} id="1" />   
+            </div>
+        </Col>
+
+        <Col md={6} className="innercolumn right">
+            <div className="bioinfo">
+                <h1 className="productname">Classic</h1>
+                <p className="product-description">
+                The Classic is a well-balanced cup and offers a healthy balance of salty and sweet.
+                </p>
             </div>
             <Ratioresult 
                 chocolate={profiledata[2].chocolate}
                 peanutbutter={profiledata[2].peanutbutter}
             />
+        </Col>
+        </div>
         </div>  
         </Col>
 
-        <Col lg={3} md={6} sm={12}className="profile-images">
-        <div className="bio-card">
+
+        <Col md={6} sm={12}className="profile-images cardbigcup">
+        
+        <div className="bio-card ">
+        <div className="inner-row">
+        <Col md={6} className="innercolumn">
             <div className="images mini">
                 <img className="product-img" src={bigcup} id="1" />   
+            </div>
+        </Col>
+        
+        <Col md={6} className="innercolumn right">
+            <div className="bioinfo">
+                <h1 className="productname">Big Cup</h1>
+                <p className="product-description">
+                The Classic is a well-balanced cup and offers a healthy balance of salty and sweet.
+                </p>
             </div>
             <Ratioresult 
                 chocolate={profiledata[3].chocolate}
                 peanutbutter={profiledata[3].peanutbutter}
             />
+        </Col>
+        </div>
         </div>  
         </Col>
+
+
     </div>
 </div>
 )}
