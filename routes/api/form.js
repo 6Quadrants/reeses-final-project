@@ -22,7 +22,30 @@ router.route('/api/saveName')
     res.json(true)
   });
 
+  router.route('/api/formDrop')
+  .post( (req, res) => {
+    console.log('made it here form');
+    req.body = formData; 
+    console.log('Submitted number: ', formDrop);
+    res.json(true)
+  });
 
+  router.route('/api/formSalty')
+  .post( (req, res) => {
+    console.log('made it here form');
+    req.body = saltyData; 
+    console.log('Submitted number: ', formSalty);
+    res.json(true)
+  });
+
+  router.route('/api/formSweet')
+  .post( (req, res) => {
+    console.log('made it here form');
+    req.body = sweetData; 
+    console.log('Submitted number: ', formSweet);
+    res.json(true)
+  });
+  
 module.exports = router;
 
 

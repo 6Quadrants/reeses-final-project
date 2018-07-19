@@ -5,8 +5,8 @@
         "name": "Mini",
         "icon": "",
         "img": "",
-        "chocolate": 1,
-        "peanutbutter": 1,
+        "chocolate": 2,
+        "peanutbutter": 3,
         "profile-highlight": "",
         "profile-info": "Don't blink because you may miss the mini. A poppable cup with a thick outer shell."
     },
@@ -25,8 +25,8 @@
         "name": "Classic",
         "icon": "",
         "img": "",
-        "chocolate": 2,
-        "peanutbutter": 3,
+        "chocolate": 1,
+        "peanutbutter": 5,
         "profile-highlight": "",
         "profile-info": "The Classic is a well-balanced cup and offers a healthy balance of salty and sweet."
     },
@@ -36,7 +36,7 @@
         "icon": "",
         "img": "",
         "chocolate": 1,
-        "peanutbutter": 4,
+        "peanutbutter": 6,
         "profile-highlight": "",
         "profile-info": "A bit on the salty side, the Big Cup is a hefty cup with a generous amount of peanut butter."
     }

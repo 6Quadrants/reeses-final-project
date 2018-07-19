@@ -29,12 +29,14 @@ p {
     padding: 0;
 }
 
-.row.profile-cont {
-    background-color: #4B1C1B;
-    width: 100%;
+.cont {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 0;
 }
+
+
+
 
 .profile-header {
     width: 100%;
@@ -102,8 +104,8 @@ span.profile-subheader {
 
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     margin: 0;
     padding: 0;
 }
@@ -117,6 +119,8 @@ span.profile-subheader {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 0;
+    width: 100%;
 }
 
 .profile-images {
@@ -126,12 +130,6 @@ span.profile-subheader {
 
 }
 
-
-/* .bio-card {
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 7px 10px #cccccc; */
- 
 
 .cardmini {
     border: solid 20px #4B1C1B;
@@ -158,22 +156,23 @@ span.profile-subheader {
     max-width: 75%;
 }
 
-.innerrow,
+/* .innerrow,
 .innercolumn {
     margin: 0;
     padding: 0;
-}
+} */
 
 .inner-row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    /* flex-wrap: nowrap; */
 }
 
 .inner-column {
     height: 100%;
+    width: 100%;
+
 }
 
 .innercolumn.right {
@@ -199,6 +198,10 @@ h1.ratio {
 
 .ratio-result {
     margin-top: 2em;
+}
+
+.row {
+    margin: 0;
 }
 
 

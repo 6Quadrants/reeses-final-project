@@ -54,17 +54,17 @@ return (
 
 <div className="container-fluid profile-cont" id="Profiles">
    
-    <div className="row profile-cont">
+    {/* <div className="row profile-cont">
         <Col md={12} className="profile-grid">
             <div className="profile-text">
                 <div className="profile-header"><h2 className="text-padding"><span className="yellow-header">ALL THE PROFILES</span></h2></div>
                 <div className="profile-sub-header"><h4 className="text-padding"><span className="">HIGHLIGHTED INFO AREA</span></h4></div>
             </div>
         </Col>
-</div>
+</div> */}
          
 
-    <div className="row profile-images-row">
+    <div className="cont">
 
     <Col md={6} sm={12}className="profile-images cardmini">
         
@@ -119,7 +119,7 @@ return (
         </Col>
 </div>
 
-    <div className="row profile-images-row">
+    <div className="cont">
         <Col md={6} sm={12}className="profile-images cardclassic">
         
         <div className="bio-card">

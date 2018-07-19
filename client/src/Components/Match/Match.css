@@ -6,6 +6,11 @@ row .form-container {
     background-color: #FFCB00;
 }
 
+.headings {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
 
 p.input-text {
     font-weight: 400;
@@ -45,15 +50,15 @@ h1.form-title {
     font-size: 4em;
     letter-spacing: 4px;
     text-align: center;
-    padding-top: 1.2em;
-
+    padding: 1.2em;
 }
+
 
 
 .slider-reference{
     /* display: flex;
     flex-wrap: wrap; */
-    padding: 6em 0em 0em 6em;
+    padding: 1.2em;
     background-color: #4B1C1B;
     max-width: 100%;
     margin: auto;
@@ -87,14 +92,21 @@ h2.button-text{
     padding: .6em .8em .3em .8em;
 }
 
-.headings {
-    display: flex;
-    align-items: center;
-}
+
 
 h1.match-headings {
     color: #FFCB00;
     text-transform: uppercase;
     text-align:center;
-    padding: 2em;
+    padding: 1.4em;
+    font-size: 6em;
+    line-height: 6rem;
+    margin: auto;
+}
+
+.row.profile-cont {
+    background-color: #4B1C1B;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }

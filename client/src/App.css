@@ -1,5 +1,7 @@
 .reeses-wrapper {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -62,7 +64,9 @@ p {
   transition: none;
 }
 
-
+.recharts-wrapper {
+  margin: auto;
+}
 
 
 /* .App {

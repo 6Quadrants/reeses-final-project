@@ -42,6 +42,60 @@ app.post( '/api/saveName', (req, res) => {
   res.json(true)
 });
 
+app.get( 'api/formDrop', (req, res) => {
+  console.log('made it here to form drop');
+  res.send('here is form drop');
+});
+
+app.post( '/api/formDrop', (req, res) => {
+  console.log(req.body);
+  console.log('form drop here');
+  let formData = req.body;
+  console.log('submitted number: ' , req.body.value);
+  res.json(true);
+});
+
+app.get( 'api/formSalty', (req, res) => {
+  console.log('made it here to salty drop');
+  res.send('here is salty drop');
+});
+
+app.post( '/api/formSalty', (req, res) => {
+  console.log(req.body);
+  console.log('salty drop here');
+  let saltyData = req.body;
+  console.log('submitted number: ' , req.body.value);
+  res.json(true);
+});
+
+app.get( 'api/formSweet', (req, res) => {
+  console.log('made it here to sweet drop');
+  res.send('here is sweet drop');
+});
+
+app.post( '/api/formSweet', (req, res) => {
+  console.log(req.body);
+  console.log('sweet drop here');
+  let sweetData = req.body;
+  console.log('submitted number: ' , req.body.value);
+  res.json(true);
+});
+
+app.get( 'api/formSmooth', (req, res) => {
+  console.log('made it here to sweet drop');
+  res.send('here is smooth drop');
+});
+
+app.post( '/api/formSmooth', (req, res) => {
+  console.log(req.body);
+  console.log('smooth drop here');
+  let smoothData = req.body;
+  console.log('submitted number: ' , req.body.value);
+  res.json(true);
+});
+
+
+
 // app.use(routes);
 // app.use(form_routes);
 

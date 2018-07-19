@@ -1,4 +1,75 @@
-.container-fluid.wrapper {
-    background-color: #F96A00;
-    height: 100vh;
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
+.inner-wrapper {
+    margin: auto;
+    padding: 4em;
+}
+
+.row {
+    margin: 4em 3em;
+}
+
+.stats-container {
+    background-color: #EDECEC;
+    margin: 2em;
+    border-radius: 10px;
+}
+
+.stats-info {
+    margin: 1em;
+    padding: 2em 3em 1em 0;
+}
+
+.label {
+    background-color: #9C9999;
+    width: 100%;
+}
+
+.recharts-cartesian-grid {
+    margin: auto;
+    width: 100%;
+}
+
+h3.chart-label {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4em;
+    padding: .4em;
+}
+
+path {
+    stroke: rgba(255, 255, 255, 0);
+}
+
+li.recharts-legend-item {
+    padding: 0;
+}
+
+.recharts-wrapper {
+    /* width: 100%; */
+    max-height: 350px;
+}
+
+svg.recharts-surface {
+width: 100%;    
+/* padding: 10px; */
+}
+
+/* svg.recharts-surface {
+    max-height: 350px;
+    padding: 10px;
+    max-width: 800px;
+} */
+
+.recharts-layer {
+    margin: auto;
+}
+
+/* svg.recharts-surface {
+    width:500px;
+} */
