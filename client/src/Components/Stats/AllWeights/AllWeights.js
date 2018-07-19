@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "../StatComponents.css";
 
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid} from "recharts";
 
 
 const data = [
@@ -14,9 +14,7 @@ const data = [
     
 ];
 
-const orange = '#F96A00';
-const yellow = '#FFCB00';
-const brown = '#4B1C1B';
+
 
 class AllWeights extends Component {
 	render () {

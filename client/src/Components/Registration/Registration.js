@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import {Col} from "react-bootstrap";
 import Login from "../Login";
 import Register from "../Register";
@@ -14,8 +14,8 @@ import circleoverlap from "../../Images/circleoverlap.svg";
 const Registration = props => (
 
     <div className="container-fluid wrapper" id="Registration">
-    <div className="circle"><img className="bg-circle" src={circle} /></div>
-    <div className="circle-overlap"><img className="bg-overlap" src={circleoverlap} /></div>
+    <div className="circle"><img className="bg-circle" src={circle} alt="brown circle graphic" /></div>
+    <div className="circle-overlap"><img className="bg-overlap" src={circleoverlap} alt="brown circle graphic"/></div>
 
     <div className="header"></div>
     <div className="container-inner">

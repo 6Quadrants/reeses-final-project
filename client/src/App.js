@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // import axios from 'axios';
 import './App.css';
@@ -7,7 +7,6 @@ import './App.css';
 import Navigation from "./Components/Navigation";
 import Profiles from "./Components/Profiles";
 import Match from "./Components/Match";
-import CardResult from "./Components/CardResult";
 import Registration from "./Components/Registration";
 import Stats from "./Components/Stats";
 import Footer from "./Components/Footer";

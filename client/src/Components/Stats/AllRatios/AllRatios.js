@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../StatComponents.css";
 
 // import data from "../data";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from "recharts";
 
 const data = [
     {name: 'mini', choc: 2, pb: 3, amt: 5},
@@ -11,9 +11,6 @@ const data = [
     {name: 'big cup', choc: 1, pb: 6, amt:7},
 ];
 
-const orange = '#F96A00';
-const yellow = '#FFCB00';
-const brown = '#4B1C1B';
 
 
 class AllRatios extends Component {

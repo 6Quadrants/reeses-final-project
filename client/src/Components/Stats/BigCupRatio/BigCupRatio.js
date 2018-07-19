@@ -8,11 +8,6 @@ const data01 =
 
 const data02 = [{name: 'B1', value: 600}]
 
-
-const COLORS = ['#4B1C1B', '#F96A00'];
-
-
-
 class BigCupRatio extends Component {
 	render () {
   	return (

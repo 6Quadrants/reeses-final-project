@@ -17,10 +17,6 @@ import miniature from "../../Images/miniature.png";
 
 
 
-
-
-const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
-
 class Profiles extends Component {
 
     state = {
@@ -51,16 +47,7 @@ render() {
 return (
 
 <div className="container-fluid profile-cont" id="Profiles">
-   
-    {/* <div className="row profile-cont">
-        <Col md={12} className="profile-grid">
-            <div className="profile-text">
-                <div className="profile-header"><h2 className="text-padding"><span className="yellow-header">ALL THE PROFILES</span></h2></div>
-                <div className="profile-sub-header"><h4 className="text-padding"><span className="">HIGHLIGHTED INFO AREA</span></h4></div>
-            </div>
-        </Col>
-</div> */}
-         
+
 
     <div className="cont">
 
@@ -70,7 +57,7 @@ return (
         <div className="inner-row">
         <Col md={6} className="innercolumn">
             <div className="images mini">
-                <img className="product-img" src={mini} id="1" />   
+                <img className="product-img" src={mini} id="1" alt="reeses peanut butter cup mini"/>   
             </div>
         </Col>
         
@@ -96,7 +83,7 @@ return (
         <div className="inner-row">
         <Col md={6} className="innercolumn">
             <div className="images mini">
-                <img className="product-img" src={classic} id="1" />   
+                <img className="product-img" src={miniature} id="1" alt="reeses peanut butter cup miniature"/>   
             </div>
         </Col>
         
@@ -124,7 +111,7 @@ return (
         <div className="inner-row">
         <Col md={6} className="innercolumn">
             <div className="images mini">
-                <img className="product-img" src={classic} id="1" />   
+                <img className="product-img" src={classic} id="1" alt="reeses peanut butter cup classic"/>   
             </div>
         </Col>
 
@@ -151,7 +138,7 @@ return (
         <div className="inner-row">
         <Col md={6} className="innercolumn">
             <div className="images mini">
-                <img className="product-img" src={bigcup} id="1" />   
+                <img className="product-img" src={bigcup} id="1" alt="reeses peanut butter cup big cup"/>   
             </div>
         </Col>
         

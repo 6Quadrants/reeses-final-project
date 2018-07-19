@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../StatComponents.css";
-import { PieChart, Pie, Sector, Cell } from "recharts";
+import { PieChart, Pie} from "recharts";
 
 
 const data01 = 
@@ -9,7 +9,6 @@ const data01 =
 const data02 = [{name: 'B1', value: 400}]
 
 
-const COLORS = ['#4B1C1B', '#F96A00'];
 
 
 

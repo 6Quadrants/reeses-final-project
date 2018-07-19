@@ -15,7 +15,7 @@ const CardResult = props => (
             <Col sm={12} className="">
                 <div className="card-holder">
                 <div className="">
-                    <img className="card-image-bg" src={mini} />
+                    <img className="card-image-bg" src={mini} alt="reeses peanut butter cup mini" />
                 </div>
                 {/* <div className="">
                 
@@ -24,7 +24,7 @@ const CardResult = props => (
                     
                 </div> */}
                 <div className="card-text">
-                            <img className="winnericon" src={miniatureicon} />
+                            <img className="winnericon" src={miniatureicon} alt="reeses peanut butter cup icon" />
                             <h2 className="">{props.name}</h2>
                             <h3 className="winner-hilite">HIGHLIGHTED INFO AREA</h3>
                             <p className="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, 
