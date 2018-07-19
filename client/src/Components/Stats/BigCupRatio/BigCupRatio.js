@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../StatComponents.css";
-import { PieChart, Pie, Sector, Cell } from "recharts";
+import { PieChart, Pie} from "recharts";
 
 
 const data01 = 

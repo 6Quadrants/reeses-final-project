@@ -1,1 +1,1 @@
-export classic from "./classic.png";
+export {classic} from "./classic.png";

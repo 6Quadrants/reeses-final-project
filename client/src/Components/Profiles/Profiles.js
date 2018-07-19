@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import "./Profiles.css";
-import API from "../../utils/API";
-import { Link } from "react-router-dom";
+
 import { Col} from "react-bootstrap";
-import { List, ListItem } from "../../Components/List";
 
 import Ratioresult from "../Ratioresult";
 
@@ -181,49 +179,4 @@ return (
 
 export default Profiles;
 
-                
-
-
-            //  {this.state.reeses.length ? ( 
-            //   <List>
-            //     {this.state.reeses.map(reeses => (
-            //       <ListItem key={reeses._id}>
-            //         <Link to={"/reeses/" + reeses._id}>
-            //           <strong>
-            //             {reeses.chocolate} by {reeses.peanutbutter} and {reeses.product}
-            //           </strong>
-            //         </Link>
-            //       </ListItem>
-            //     ))}
-            //   </List>
-            // ) : (
-            //   <h3>No Results to Display</h3>
-            // )}
-
-
-            
-   
-
-             /* <ProfileClassic />  */
-            
-                 /* <h1 className="product-name">{props.name}</h1>
-                <p className="product-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                </p>
-            <div className="ratio-result">
-                <h1 className="ratio">
-                    <span className="chocolate">{props.chocolate}</span>
-                    <span className="colon">:</span>
-                    <span className="pb">{props.peanutbutter}</span>
-                </h1>
-            </div>
-            <Button><a href="#">BUTTON</a></Button>  */
-           /* </div> */
-
-
-
-
-
-
-
-
+           

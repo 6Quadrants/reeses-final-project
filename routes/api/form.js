@@ -71,34 +71,3 @@ router.route('/api/saveName')
   });
 
 module.exports = router;
-
-
-// router.get("/recipes", (req, res) => {
-//   axios
-//     .get("http://www.recipepuppy.com/api/", { params: req.query })
-//     .then(({ data: { results } }) => res.json(results))
-//     .catch(err => res.status(422).json(err));
-// });
-
-
-
-
-
-
-
-// const express = require('express');
-// const Form = require("../../models/formmodel");
-// const formRouter = express.Router();
-
-
-
-// formRouter.route('/')
-//     .get((req,res) => {
-//         Form.find({}, (err, form) => {
-//             res.json(form)
-//         })
-//     }),
-  
-
-   
-// module.exports = formRouter;

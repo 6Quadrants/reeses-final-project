@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import API from "../../utils/API";
-import { Col} from "react-bootstrap";
+
 import "./Bars.css";
 
-// import data from "../data";
-import * as d3 from "d3";
 import {BarChart, Bar, PieChart, Pie, Sector, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from "recharts";
 
 const data = [

@@ -12,7 +12,7 @@ import MeltyForm from "../FormDrop/MeltyForm";
 
 
 import CardResult from "../CardResult";
-import {Col, Button, Image } from "react-bootstrap";
+import {Col} from "react-bootstrap";
 
 
 

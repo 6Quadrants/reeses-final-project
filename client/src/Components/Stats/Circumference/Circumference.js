@@ -1,6 +1,5 @@
 
 import React, { Component } from "react";
-import { Col} from "react-bootstrap";
 import "../StatComponents.css";
 
 // import data from "../data";

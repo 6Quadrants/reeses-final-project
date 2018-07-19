@@ -1,6 +1,6 @@
 import React from "react";
 import "./Results.css";
-import {Col, Form} from "react-bootstrap";
+import {Col} from "react-bootstrap";
 import classic from "./classic.png";
 import mini from "../../Images/mini.png";
 import miniatureicon from "../../Images/miniatureicon.svg";

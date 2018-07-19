@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navigation.css";
-import { Navbar, NavDropdown, NavItem, MenuItem, Nav } from "react-bootstrap";
 
 
 const Navigation = props => (

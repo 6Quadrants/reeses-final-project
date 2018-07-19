@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { Col} from "react-bootstrap";
 import "../StatComponents.css";
 
 // import data from "../data";
-import * as d3 from "d3";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
 
 const data = [
