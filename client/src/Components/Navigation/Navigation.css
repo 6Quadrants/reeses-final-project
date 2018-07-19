@@ -1,4 +1,6 @@
-
+#menu {
+    z-index: 55;
+}
 
 
 h1.navbar-brand {

@@ -41,6 +41,14 @@ export default {
     return axios.post('api/formSmooth', smoothData);
   },
 
+  meltyValue: function(meltyData) {
+    return axios.post('api/formMelty', meltyData);
+  },
+
+  chewyValue: function(chewyData) {
+    return axios.post('api/formChewy', chewyData);
+  },
+
 
 };
 

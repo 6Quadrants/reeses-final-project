@@ -6,8 +6,8 @@ import { Navbar, NavDropdown, NavItem, MenuItem, Nav } from "react-bootstrap";
 const Navigation = props => (
 
 
-    <nav className="navbar navbar-expand-lg navbar-light">
-    <a className="navbar-brand" href="https://www.google.com/">   
+    <nav className="navbar navbar-expand-lg navbar-light" id="menu">
+    <a className="navbar-brand" href="/">   
     <h1>
         <span className="chocolate">CHOC</span>
          <span className="colon">:</span>

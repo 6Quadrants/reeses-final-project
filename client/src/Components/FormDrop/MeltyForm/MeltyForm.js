@@ -23,7 +23,7 @@ class MeltyForm extends React.Component {
       event.preventDefault();
       console.log(this.state);
 
-      API.MeltyValue( { value: this.state.value } ).then( res => {
+      API.meltyValue( { value: this.state.value } ).then( res => {
         console.log(res);
         if ( res.data === true  ) {
         //   alert('form drop submitted');

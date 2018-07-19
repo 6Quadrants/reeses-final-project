@@ -23,7 +23,7 @@ class SmoothForm extends React.Component {
       event.preventDefault();
       console.log(this.state);
 
-      API.SmoothValue( { value: this.state.value } ).then( res => {
+      API.smoothValue( { value: this.state.value } ).then( res => {
         console.log(res);
         if ( res.data === true  ) {
         //   alert('form drop submitted');

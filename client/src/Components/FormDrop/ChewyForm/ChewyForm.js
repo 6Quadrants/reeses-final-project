@@ -23,7 +23,7 @@ class ChewyForm extends React.Component {
       event.preventDefault();
       console.log(this.state);
 
-      API.ChewyValue( { value: this.state.value } ).then( res => {
+      API.chewyValue( { value: this.state.value } ).then( res => {
         console.log(res);
         if ( res.data === true  ) {
         //   alert('form drop submitted');

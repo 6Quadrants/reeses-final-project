@@ -15,21 +15,17 @@ import Footer from "./Components/Footer";
 
 const App = () => (
     <Router>
-       <div className="reeses-wrapper">  
-       <Navigation />
-        <Switch>
+        <div className="reeses-wrapper">  
+          <Navigation />
+
           <Route exact path="/" component={Registration} />
-          <Route exact path="/registration" component={Registration} />
-        </Switch>
-        <Switch>
+
+
         <Route exact path="/profiles" component={Profiles} />
-        </Switch>
-        <Switch>
+       
         <Route exact path="/match" component={Match} />
-        </Switch>
-        <Switch>
+       
         <Route exact path="/stats" component={Stats} />
-        </Switch>
         <Footer />
       </div>
     </Router>

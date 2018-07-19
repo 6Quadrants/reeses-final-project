@@ -17,7 +17,7 @@ const Registration = props => (
     <div className="circle"><img className="bg-circle" src={circle} /></div>
     <div className="circle-overlap"><img className="bg-overlap" src={circleoverlap} /></div>
 
-    <div className="header"><h1 className="colon">CHOC:PB</h1></div>
+    <div className="header"></div>
     <div className="container-inner">
         <div className="intro">
    

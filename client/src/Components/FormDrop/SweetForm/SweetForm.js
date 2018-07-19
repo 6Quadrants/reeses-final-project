@@ -23,7 +23,7 @@ class SweetForm extends React.Component {
       event.preventDefault();
       console.log(this.state);
 
-      API.SweetValue( { value: this.state.value } ).then( res => {
+      API.sweetValue( { value: this.state.value } ).then( res => {
         console.log(res);
         if ( res.data === true  ) {
         //   alert('form drop submitted');

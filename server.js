@@ -94,6 +94,34 @@ app.post( '/api/formSmooth', (req, res) => {
   res.json(true);
 });
 
+app.get( 'api/formChewy', (req, res) => {
+  console.log('made it here to chewy drop');
+  res.send('here is chewy drop');
+});
+
+app.post( '/api/formChewy', (req, res) => {
+  console.log(req.body);
+  console.log('chewy drop here');
+  let chewyData = req.body;
+  console.log('submitted number: ' , req.body.value);
+  res.json(true);
+});
+
+app.get( 'api/formMelty', (req, res) => {
+  console.log('made it here to melty drop');
+  res.send('here is melty drop');
+});
+
+app.post( '/api/formMelty', (req, res) => {
+  console.log(req.body);
+  console.log('melty drop here');
+  let meltyData = req.body;
+  console.log('submitted number: ' , req.body.value);
+  res.json(true);
+});
+
+
+
 
 
 // app.use(routes);

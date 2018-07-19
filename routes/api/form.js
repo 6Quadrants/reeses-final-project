@@ -45,7 +45,31 @@ router.route('/api/saveName')
     console.log('Submitted number: ', formSweet);
     res.json(true)
   });
-  
+
+  router.route('/api/formSmooth')
+  .post( (req, res) => {
+    console.log('made it here form');
+    req.body = smoothData; 
+    console.log('Submitted number: ', formSmooth );
+    res.json(true)
+  });
+
+  router.route('/api/formChewy')
+  .post( (req, res) => {
+    console.log('made it here form');
+    req.body = chewyData; 
+    console.log('Submitted number: ', formChewy);
+    res.json(true)
+  });
+
+  router.route('/api/formMelty')
+  .post( (req, res) => {
+    console.log('made it here form');
+    req.body = meltyData; 
+    console.log('Submitted number: ', formMelty);
+    res.json(true)
+  });
+
 module.exports = router;
 
 
