@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-// const routes = require("./routes");
-// const form_routes = require("./routes/api/form");
+const routes = require("./routes");
+const form_routes = require("./routes/api/form");
 
 
 // const passport = require("./config/passport");
@@ -135,6 +135,6 @@ db.on("error", console.error.bind(console, "connection error: "))
 
 
 // Start the API server
-// app.listen(PORT, function() {
-//   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-// });
+app.listen(PORT, function() {
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+});
