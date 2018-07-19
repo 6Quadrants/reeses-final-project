@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+DB_USER=bunnymuffin
+DB_PASS=reeseypiecey3
+DB_SERVER=ds141621.mlab.com:41621/heroku_682fv01q

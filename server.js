@@ -122,13 +122,19 @@ app.post( '/api/formMelty', (req, res) => {
 
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reesesinitial");
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reesesinitial");
+// const db = mongoose.connection;
+
+mongoose.connect(process.env.MONGODB_URI || `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_SERVER}`);
 const db = mongoose.connection;
+
+app.set('port', (process.env.PORT || 1337));
+
 
 db.on("error", console.error.bind(console, "connection error: "))
 
 
 // Start the API server
-app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-});
+// app.listen(PORT, function() {
+//   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+// });
