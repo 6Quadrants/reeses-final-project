@@ -1,8 +1,11 @@
 {
   "name": "reeses-final-project",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "proxy": "http://localhost:3002/",
+  "engines": {
+    "node": "8.11.1"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "bcrypt": "^3.0.0",
